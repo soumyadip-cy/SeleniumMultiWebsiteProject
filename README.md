@@ -1,4 +1,4 @@
-# **SeleniumMultiWebsiteProject | Automation Testing project**
+# **SeleniumMultiWebsiteProject | Automation Testing project with Selenium and TestNG**
 
 SeleniumMultiWebsiteProject is an **automation testing project** made using **Selenium** and **TestNG**.
 > GitHub link for this app is [SeleniumMultiWebsiteProject](https://github.com/soumyadip-cy/SeleniumMultiWebsiteProject)
