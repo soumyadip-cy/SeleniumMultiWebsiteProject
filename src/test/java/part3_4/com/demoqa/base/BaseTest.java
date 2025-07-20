@@ -15,6 +15,7 @@ import part3.demoqa.pages.HomePage;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.format.DateTimeFormatter;
 
 import static part3.demoqa.pages.BasePage.delay;
 import static utilities.Utility.setUtilityDriver;
@@ -52,7 +53,7 @@ public class BaseTest {
             File source = screenshot.getScreenshotAs(OutputType.FILE);
             //The destination of the screenshots to be copied to
             File destination = new File(System.getProperty("user.dir") + "/resources/screenshots/("
-                    + java.time.LocalDate.now() + ")" + testResult.getName() + ".png");
+                    + java.time.LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MMMM-yyyy--hh-mm-ss-a")) + ")" + testResult.getName() + ".png");
             try {
                 FileHandler.copy(source, destination);
             } catch (IOException e) {
