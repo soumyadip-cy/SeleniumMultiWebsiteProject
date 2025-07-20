@@ -1,7 +1,10 @@
 package part3_4.com.demoqa.tests.part3.widgets;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import part3_4.com.demoqa.base.BaseTest;
+
+import java.util.List;
 
 import static part3.demoqa.pages.BasePage.delay;
 
@@ -18,6 +21,11 @@ public class SelectDropDownTest extends BaseTest {
         delay(500);
         selectMenuPage.selectStandardMultiIndex(2);
         delay(500);
+        List<String> actualSelectedOptions = selectMenuPage.getAllSelectedStandardMultiOptions();
+        for(String opt : new String[]{"Volvo", "Opel", "Saab", "Audi"}) {
+            Assert.assertTrue(actualSelectedOptions.contains(opt), opt+" : not found !");
+        }
+        delay(500);
         selectMenuPage.deselectStandardMulitVisibleText("Audi");
         delay(500);
         selectMenuPage.deselectStandardMulitIndex(2);
@@ -25,6 +33,5 @@ public class SelectDropDownTest extends BaseTest {
         selectMenuPage.deselectStandardMulitIndex(0);
         delay(500);
         selectMenuPage.deselectStandardMulitValue("saab");
-        delay(500);
     }
 }

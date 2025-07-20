@@ -43,6 +43,7 @@ public class SelectMenuPage extends WidgetsPage {
     }
 
     public List<String> getAllSelectedStandardMultiOptions() {
-
+        scrollToElementJS(standardMultiSelect);
+        return getAllSelectedOptions(standardMultiSelect);
     }
 }

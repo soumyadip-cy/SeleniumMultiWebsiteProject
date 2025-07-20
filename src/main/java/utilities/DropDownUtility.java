@@ -13,6 +13,7 @@ public class DropDownUtility extends Utility {
         return new Select(driver.findElement(locator));
     }
 
+    //These methods are static so that they can be accessed without creating an object of the class.
     public static void selectByVisibleText(By locator, String text) {
         findDropDown(locator).selectByVisibleText(text);
     }
@@ -37,7 +38,7 @@ public class DropDownUtility extends Utility {
         findDropDown(locator).deselectByValue(value);
     }
 
-    public List<String> getAllSelectedOptions(By locator) {
+    public static List<String> getAllSelectedOptions(By locator) {
         List<WebElement> allSelectedOptions =
                 findDropDown(locator).getAllSelectedOptions();
         return allSelectedOptions.stream()
