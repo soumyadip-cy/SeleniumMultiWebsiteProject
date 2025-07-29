@@ -1,7 +1,7 @@
 package utilities;
 
 import org.openqa.selenium.WebDriver;
-import part3.demoqa.pages.BasePage;
+import demoqa.pages.BasePage;
 
 public class Utility {
 

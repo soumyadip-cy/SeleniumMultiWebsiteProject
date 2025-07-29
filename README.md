@@ -7,15 +7,11 @@ SeleniumMultiWebsiteProject is an **automation testing project** made using **Se
 
 ### Features
 
-1. This project is made adhering to POM or Page Object Model architecture:
-    - The project is divided into 4 parts.
-    - The 1st part is for a basic test.
-    - The 2nd part is for **https://www.saucedemo.com/**.
-    - The 3rd and 4th part is for **https://demoqa.com/**.
+1. This project is made adhering to POM or Page Object Model architecture
 
+2. This project performs functional testing on the websites **https://www.saucedemo.com/** and **https://demoqa.com/**.
 
-2. The project utilizes the **Selenium** and **TestNG** frameworks.
+3. The project utilizes the **Selenium**  and **TestNG** frameworks for web page automation and automated testing respectively.
 
-
-3. This project is a demonstration of automated testing of different types of **Web Elements**, such as clicking of buttons, 
+4. This project is a demonstration of automated testing of different types of **Web Elements**, such as clicking of buttons, 
 getting texts inside a div, handling of alerts, entering inputs such as dates, selecting radio options, etc.
